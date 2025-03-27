@@ -1,0 +1,70 @@
+		body {
+			background-color:#eadcd8;
+		}
+		img {
+			max-width:25%;
+			height: auto;	
+		}
+		h1 {
+			text-align: center;
+		}
+		h2 {
+			text-align: left;
+		}
+		ul.nav-bar-style { 
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #373636;
+		}
+		li {
+		float: left;
+		}
+		li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
+		li a:hover {
+		background-color: #111;
+		}
+		.active {
+			background-color:#d1b50a;
+		}
+		.flex-container {
+			display: flex;
+			justify-content: center;
+		}	 
+		@font-face {
+			font-family: Kingred;
+			src: url(kingred.otf);
+		}
+		.h1 {
+			font-family: "Kingred";
+		}
+		.h2 {
+			text-align: center;
+			font-family: "Kingred";
+		}
+		body {
+			font-family: Tahoma, Arial, sans-serif;
+		}
+		.myDiv {
+			border: 5px;
+			text-align: left;
+		}
+		.header {
+			font-family: "Kingred";
+			text-align: center;
+			background-image: url("top-banner.png")
+		}
+		@font-face {
+			font-family: BeVietnam;
+			src: url(BeVietnamPro-Regular.ttf);
+		}
+		.p1 {
+			font-family: "BeVietnam";
+		}

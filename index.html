@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-		<title>Benjamin Netherway</title>
-		<style> 
+<title>Benjamin Netherway</title>
+		<style>/*BACKGROUND STYLING*/ 
 			body {
 				background-color:#eadcd8;
 			}
 		</style>
-		<style>
+		<style>/*IMG STYLING*/
 		img {
 			max-width:25%;
 			height: auto;	
 		}
 		</style>
-		<style>
+		<style>/*HEADING STYLES*/
 		h1 {
 			text-align: center;
 		}
@@ -22,57 +22,120 @@
 			text-align: left;
 		}
 		</style>
-		<style>
-		div {
-			padding: 10px 10px 10px 10px;
-		}
-		</style>
-		<style>
-		.nav li {
-			display: inline;
-		}
-		</style>
-		<style>
-		.container {
-			background-color: #373636;
-			width: 90%;
-			max-width: 900px;
-			margin: 0 auto;
-		}
-		</style>
+		<style>/*NAV BAR*/
+		ul.nav-bar-style { 
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #373636;
 		
+		}
+
+		li {
+		float: left;
+		}
+
+		li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
+
+		li a:hover {
+		background-color: #111;
+		}
+		.active {
+			background-color:#d1b50a;
+		}
+		</style>
+		<style>/*FLEX CONTAINER*/
+		.flex-container {
+			display: flex;
+			justify-content: center;
+		}	 
+		</style>
+		<style>/*INSERT KINGRED*/
+		@font-face {
+			font-family: Kingred;
+			src: url(kingred.otf);
+		}
+		</style>
+		<style>/H1 STYLING*/
+		.h1 {
+			text-align: center;
+			font-family: "Kingred";
+		}
+		</style>
+		<style>/*H2 STYLING*/
+		.h2 {
+			text-align: center;
+			font-family: "Kingred";
+		}
+		</style>
+		<style>/*BODY FONT (BACKUP)*/
+		body {
+			font-family: Tahoma, Arial, sans-serif;
+		}
+		</style>
+		<style>/*myDiv STYLE*/
+		.myDiv {
+			border: 5px;
+			text-align: left;
+		}
+		</style>
+		<style>/*HEADER BANNER*/
+		.header {
+			font-family: "Kingred";
+			text-align: center;
+			background-image: url("top-banner.png")
+		}
+		</style>
+		<style>/*INSERT BEVIETNAM*/
+		@font-face {
+			font-family: BeVietnam;
+			src: url(BeVietnamPro-Regular.ttf);
+		}
+		</style>
+		<style>/*P1 STYLING*/
+		.p1 {
+			font-family: "BeVietnam";
+		}
+		</style>
+
 </head>
 
 <body>
-	<header><h1>Benjamin Netherway's Index</h1></header>
-	<div class="container container-nav">
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact Me</a></li>
-      </ul>
-    </nav>
-    </div>
-    
-</header>
-
-	
-	</nav>
+	<header>
+		<div class="header">
+		<div class="flex-container">
+		<h1 class="h1">Benjamin Netherway's Index</h1>
+		</div>
+	</header>
+	<ul class="nav-bar-style">
+	<li><a class="active" href="index.html">HOME</a></li>
+	<li><a href="portfolio.html">CLICKSTART</a></li>
+	<li><a href="#Wormfeed">WORMFEED</a></li>
+	<li><a href="#about">ABOUT</a></li></ul>
+	</ul>
 	
 	<section>
-		<div>
-	<h2><div><img src="IMG_5251.jpg" alt="Ben in a Bookshop" style="float:right;"></div>Welcome to my Index, where you'll find some snazzy looking websites and web content.</h1>
-	<p>I've focused mainly on web design and on UX/UI elements, as I hope to market my upcoming novel <i>Wormfeed</i>, as well as to create a user-friendly, aesthetically pleasing platform to post short stories, reviews, journals and novel extracts. </p>
+	<h2 class="h2"><div><img src="IMG_5251.jpg" alt="Ben in a Bookshop" style="float:right;"></div>Welcome to the Index</h2>
+	<div class="myDiv">
+		<p class="p1">I've focused mainly on web design and on UX/UI elements, as I hope to market my upcoming novel <i>Wormfeed</i>, as well as to create a user-friendly, aesthetically pleasing platform to post short stories, reviews, journals and novel extracts. </p>
 	</div>
 	</section>
 	
-	<h2>My Qualifications</h2>
-	<a href="portfolio.html">Portfolio</a>
-	<ul>
-		<li> Web Content Manager and Bid Writer</li>
-		<li> Creative Writing MA</li>
-		<li> English Literature and Creative Writing BA</li>
+	<section>
+	<h2 class="h2">A little about me</h2>		
+	</section>
+	
+	<div class="myDiv">
+	<p class="p1">Benjamin Netherway is a Bristol based Welsh writer, with a deep love of local voices and dystopia. Focusing on place and personalities from post-2000s Britain, his stories are grounded in the details of real life, and he combines carefully woven prose with uncompromising critique and the minutest observations of character.<br>His debut novel Wormfeed take a gritty police procedural and laces it with dark strains of black comedy, questions our responses to ecological responsibility and explores Britain’s deep apathy in the wake of economic downturn.</p>
+	</div>
+
 	</ul>
 	
 	
