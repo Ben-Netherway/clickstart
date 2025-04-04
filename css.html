@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang"en-GB">
+<head>
+	
+	<style>
+	body {
+		background-color: #eadcd8;
+	}
+	</style>
+	<!-- colour is always spelled as 'color' in html-->
+	<style> <!--For a 'flex box'-->
+	.flex-container {
+		display: flex;
+		background-color: #06402B; <!--box background colour-->
+	}
+	
+	.flex-container > div {
+		background-color: #00FF00; <!--inner box/ content colour-->
+		margin: 5px;
+		padding:5px;
+		font-size: 30px;
+	}
+	</style>
+	
+	<style>
+	div.static {<!-- 'div.static is the variable, and the curly open bracket leads into the command to be specified-->
+		posiion: static;<!-- this is the instruction to apply to an element whenever the command is issued-->
+		border:3px solid #06402B;
+		border-width: 3px;
+		border-style:solid;
+	}
+	</style>
+	
+	<style>
+	div.relative {
+		position: relative;
+		left: 50px;
+		border: 3px solid #06402B;
+			}
+	</style>
+	
+	<style>
+	div.fixed {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: 300px
+		border: 3px solid #00FF00;
+		border-width: 3px;
+		border-style:solid;
+	}
+		</style>
+	
+		<style>
+		div.sticky {
+			position: sticky;
+			top: 0;
+			padding: 5px;
+			background-color: #cae8ca;
+			border: 2px solid #06402B;
+		}
+		</style>
+	
+		<title>Experimenting with CSS</title>
+		<!-- This is the 'header', which is what the task bar at the top
+		of the browser will display, like a title-->
+	</head>
+	<body>
+		<!-- This is the 'body', which is what the page will dispaly -->
+		<h1>Here's some CSS:</h1>
+	
+		<div class="flex-container"> <!-- This won't do anything without a style definition somewhere at the document, such as on lines 5-17-->
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		
+		<br>
+		
+		<div class="static">
+		This division has position: static;<!-- this division now has the properties set out in lines 19-22-->
+		</div>
+		
+		<br>
+		
+		<div class="relative">
+		This division has position: relative;
+		</div>
+		
+		<div class="fixed">
+		This will stay in the same place, with position: fixed;
+		</div>
+		
+		<div class="sticky">This will stick to the top!</div>
+		
+		<div style="padding-bottom:2000px">
+	
+	<body>
+</html>

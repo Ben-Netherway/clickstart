@@ -3,6 +3,10 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="stylesheet.css">
+<style>
+
+</style>
+
 </head>
 
 <body>
@@ -16,24 +20,121 @@
 	<ul class="nav-bar-style">
 	<li><a href="index.html">HOME</a></li>
 	<li><a class="active" href="portfolio.html">CLICKSTART</a></li>
-	<li><a href="#Wormfeed">WORMFEED</a></li>
+	<li><a href="wormfeed.html">WORMFEED</a></li>
 	<li><a href="#about">ABOUT</a></li></ul>
 	</ul>
 	
-	<div class="card">
-	<h1 class="alt-kingred-title" style="text-align:center">Digital Marketing Plan</h1>
-	<img src="marketing-strat-ss.png" class="responsive">
-	<p class="p1" class="responsive">Beginning in February 2025, I attended Bath Spa university's ClickStart program, to improve my web development, UX/UI design and to focus his marketing efforts. I've focused mainly on web design and on UX/UI elements, as I hope to market my upcoming novel <i>Wormfeed</i> using web tools, reaching out to industry contacts with an aesthetic portfolio of work as my chief marketing tool. Read more</p>
+	<div class="row"><!--Grandparent-->
+		<div class="column side" class="responsive"><!--Parent-->
+		</div><!--End of parent-->
+		
+		<div class="column center" class="responsive"><!--Parent-->
+			<div class="card"><!-- child-->
+			<h1 class="alt-kingred-title" style="text-align:center">DIGITAL MARKETING PLAN</h1>
+			<img src="marketing-strat-ss.png" class="responsive">
+			<p class="p1" class="responsive">We went through and created a Digital marketing plan with Rachel to relly hone in on our marketing methods, target audience and to create a structure for taking our ideas onwards past the end of the Clickstart Course.
+<a href="#content" id="myBtn">Read More</a><!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="text-align: center">
+    <iframe style="text-align: center" id="pdf" src="marketing-strat-v2.pdf" frameborder="0"></iframe>
+    </div>
+  </div>
+
+</div>
+
+
+
+</p>
+			</div><!--End of child-->
+			
+			<div class="card"><!-- child-->
+			<h1 class="alt-kingred-title" style="text-align:center">FUN WITH FIGMA</h1>
+			<img src="figma-screenshot.png" style="responsive">
+			<p class="p1" class="responsive">We went through and created a Digital marketing plan with Rachel to really hone in on our marketing methods, target audience and to create a structure for taking our ideas onwards past the end of the Clickstart Course.<a href="#content" id="myBtn2"> Read More</a>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="text-align: center">
+    <iframe style="text-align: center" id="pdf2" src="figma.pdf" frameborder="0"></iframe>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+			
+			<div class="card"><!-- child-->
+			<h1 class="alt-kingred-title" style="text-align:center">CRYING WITH CSS</h1>
+			<img src="disintegrate.gif" style="responsive">
+			<p class="p1" class="responsive">AAAAAAAAAAHHHHHHHHHHHH</p>
+
+<!-- Third Modal -->
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="text-align: center">
+      <iframe id="pdf3" src="your-third-file.pdf" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+			</div><!--End of child-->
+			
+		</div><!--End of parent-->
+		
+		<div class="column side" class="responsive"><!--Parent-->
+		</div><!--End of parent-->
+	</div><!--End of grandparent-->
 	</div>
 	
-	
-	
-	<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis dui nec sem facilisis, a fringilla odio molestie. In feugiat, risus vel lacinia tincidunt, mi velit commodo metus, at ornare risus metus ut neque. Integer sodales porta purus, nec iaculis ligula congue vel. Sed vitae lorem non elit rhoncus ultrices. Donec porttitor justo faucibus justo imperdiet congue. Quisque tincidunt velit sed ultrices commodo. Ut quis fermentum risus. Morbi dignissim viverra fringilla. Sed dapibus, dui sed viverra egestas, lectus nunc semper turpis, vel pellentesque turpis nisi sed urna. Sed imperdiet quam in nulla ullamcorper bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tristique posuere justo, eu luctus urna sollicitudin et. Sed nec est sit amet velit bibendum fermentum.</p>
-	
-	<p class="p2">TEST</p>
-	
-	<h2>Figma Prototype</h2>
-	<a href=https://www.figma.com/proto/hTmysdQEKSsclrYFOTDUIl/Youtube-Wireframe?node-id=0-1&p=f&t=sLFi645kdmb4LlvP-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=7%3A220>Youtube Prototype</a></a>
+<script>
+// Function to set up modals dynamically
+function setupModals() {
+    document.querySelectorAll(".modal").forEach((modal) => {
+        const modalId = modal.id;
+        const buttonId = modalId.replace("myModal", "myBtn"); // Match button ID
+        const btn = document.getElementById(buttonId);
+        const closeBtn = modal.querySelector(".close");
+
+        if (!btn) {
+            console.warn(`No button found for modal: ${modalId}`);
+            return;
+        }
+
+        // Open modal when button is clicked
+        btn.onclick = function () {
+            modal.style.display = "block";
+        };
+
+        // Close modal when (x) is clicked
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+    });
+
+    // Close modal when clicking outside of it
+    window.onclick = function (event) {
+        if (event.target.classList.contains("modal")) {
+            event.target.style.display = "none";
+        }
+    };
+}
+
+// Run the function to set up all modals
+setupModals();
+</script>	
+
+
 </body>
 </html>
 

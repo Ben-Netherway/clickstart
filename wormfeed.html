@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="stylesheet.css">
+<title>WORMFEED</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Wormfeed by Ben Netherway. Learn more about the upcoming literary detective novel Wormfeed here.">
+
+</head>
+
+<body>
+	<header>
+		<div class="header">
+		<div class="flex-container">
+		<h1 class="kingred-title">BENJAMIN NETHERWAY</h1>
+		</div>
+	</header>
+	
+	<ul class="nav-bar-style">
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="portfolio.html">CLICKSTART</a></li>
+	<li><a class="active" href="wormfeed.html">WORMFEED</a></li>
+	<li><a href="#about">ABOUT</a></li></ul>
+	</ul>
+	<div class="row"><!--Grandparent-->
+		<div class="column side" class="responsive"><!--Parent-->
+		</div><!--End of parent-->
+		
+		<div class="column center" class="responsive"><!--Parent-->
+			<div class="card"><!-- child-->
+			<h1 class="alt-kingred-title" style="text-align:center">WORMFEED EXTRACT</h1>
+			<img src="double-covers.png" class="responsive">
+			<p class="p1" class="responsive">Fancy reading a bit of the thing I've been harping on about for 15 months? Here's the opening two chapters of <i>WORMFEED</i>, that absolutely carried me through my postgrad.
+<a href="#content" id="myBtn">Read More</a><!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="text-align: center">
+    <iframe style="text-align: center" id="pdf" src="wormfeed-sample.pdf" frameborder="0"></iframe>
+    </div>
+  </div>
+
+</div>
+
+
+
+</p>
+			</div><!--End of child-->
+			
+			<div class="card"><!-- child-->
+			<h1 class="alt-kingred-title" style="text-align:center">ANTHOLOGY</h1>
+			<img src="anthology.png" style="responsive">
+			<p class="p1" class="responsive">Since September 2024, I and 3 other contribuors have been assembling an anthology of the work of our year's creative writing MA cohort, with the aim to release in May 2025. Stay tuned for updates!</a>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="text-align: center">
+    <iframe style="text-align: center" id="pdf2" src="figma.pdf" frameborder="0"></iframe>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+			
+			<div class="card"><!-- child-->
+			<h1 class="alt-kingred-title" style="text-align:center">RYE AND WHEAT</h1>
+			<img src="rye.jpg" style="responsive">
+			<p class="p1" class="responsive">In late 2024, I submitted a short story named 'Rye and Wheat' to the Rhys Davies Short Story Award for Welsh writers, and, though I wasn't shortlisted, I found the exercise great to get my creative juices flowing again, and I think it's a fairly weird little read for anyone into medieval life.</a></p>
+
+<!-- Third Modal -->
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div style="text-align: center">
+      <iframe style="text-align: center" id="pdf3" src="rye.pdf" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+
+<a href="#content" id="myBtn3">Read More</a>
+			</div><!--End of child-->
+			
+		</div><!--End of parent-->
+		
+		<div class="column side" class="responsive"><!--Parent-->
+		</div><!--End of parent-->
+	</div><!--End of grandparent-->
+	</div>
+	
+<script>
+// Function to set up modals dynamically
+function setupModals() {
+    document.querySelectorAll(".modal").forEach((modal) => {
+        const modalId = modal.id;
+        const buttonId = modalId.replace("myModal", "myBtn"); // Match button ID
+        const btn = document.getElementById(buttonId);
+        const closeBtn = modal.querySelector(".close");
+
+        if (!btn) {
+            console.warn(`No button found for modal: ${modalId}`);
+            return;
+        }
+
+        // Open modal when button is clicked
+        btn.onclick = function () {
+            modal.style.display = "block";
+        };
+
+        // Close modal when (x) is clicked
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+    });
+
+    // Close modal when clicking outside of it
+    window.onclick = function (event) {
+        if (event.target.classList.contains("modal")) {
+            event.target.style.display = "none";
+        }
+    };
+}
+
+// Run the function to set up all modals
+setupModals();
+</script>	
+
+
+</body>
